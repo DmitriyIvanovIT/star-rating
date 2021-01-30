@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    &__block {
+        display: flex;
+        position: relative;
+    }
+
+    &__change {
+        overflow: hidden;
+        position: absolute;
+        display: block;
+    }
+
+    &__active {
+        display: flex;
+        height: 100%;
+        width: 100px;
+        object-fit: cover;
+
+        svg {
+            display: block;
+            width: 20px !important;
+            height: 20px !important;
+            fill: gold;
+        }
+    }
+    &__default {
+        display: flex;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: gray;
+        }
+    }
+    &__count {
+    }
+}
